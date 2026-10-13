@@ -1,0 +1,59 @@
+# skillId|title|url|type  (official-docs roots only)
+python|Python documentation|https://docs.python.org/3/|docs
+pytorch|PyTorch tutorials|https://pytorch.org/tutorials/|course
+deep-learning|PyTorch tutorials|https://pytorch.org/tutorials/|course
+tensorflow|TensorFlow tutorials|https://www.tensorflow.org/tutorials|course
+sklearn|scikit-learn documentation|https://scikit-learn.org/stable/|docs
+machine-learning|scikit-learn documentation|https://scikit-learn.org/stable/|docs
+pandas|pandas documentation|https://pandas.pydata.org/docs/|docs
+numpy|NumPy documentation|https://numpy.org/doc/|docs
+matplotlib|Matplotlib documentation|https://matplotlib.org/stable/|docs
+seaborn|seaborn documentation|https://seaborn.pydata.org/|docs
+docker|Docker documentation|https://docs.docker.com/|docs
+kubernetes|Kubernetes documentation|https://kubernetes.io/docs/|docs
+sql|PostgreSQL documentation|https://www.postgresql.org/docs/|docs
+postgresql|PostgreSQL documentation|https://www.postgresql.org/docs/|docs
+mysql|MySQL documentation|https://dev.mysql.com/doc/|docs
+mongodb|MongoDB documentation|https://www.mongodb.com/docs/|docs
+redis|Redis documentation|https://redis.io/docs/|docs
+git|Git documentation|https://git-scm.com/doc|docs
+react|React documentation|https://react.dev/|docs
+typescript|TypeScript documentation|https://www.typescriptlang.org/docs/|docs
+javascript|MDN Web Docs|https://developer.mozilla.org/|docs
+html|MDN Web Docs|https://developer.mozilla.org/|docs
+css|MDN Web Docs|https://developer.mozilla.org/|docs
+responsive-design|MDN Web Docs|https://developer.mozilla.org/|docs
+accessibility|MDN Web Docs|https://developer.mozilla.org/|docs
+nodejs|Node.js documentation|https://nodejs.org/en/docs|docs
+express|Express documentation|https://expressjs.com/|docs
+fastapi|FastAPI documentation|https://fastapi.tiangolo.com/|docs
+model-deployment|FastAPI documentation|https://fastapi.tiangolo.com/|docs
+flask|Flask documentation|https://flask.palletsprojects.com/|docs
+django|Django documentation|https://docs.djangoproject.com/|docs
+tailwind|Tailwind CSS documentation|https://tailwindcss.com/docs|docs
+nextjs|Next.js documentation|https://nextjs.org/docs|docs
+vue|Vue documentation|https://vuejs.org/guide/|docs
+jest|Jest documentation|https://jestjs.io/docs/getting-started|docs
+testing|Jest documentation|https://jestjs.io/docs/getting-started|docs
+github-actions|GitHub Actions documentation|https://docs.github.com/actions|docs
+ci-cd|GitHub Actions documentation|https://docs.github.com/actions|docs
+aws|AWS documentation|https://docs.aws.amazon.com/|docs
+terraform|Terraform documentation|https://developer.hashicorp.com/terraform/docs|docs
+mlflow|MLflow documentation|https://mlflow.org/docs/latest/|docs
+mlops|MLflow documentation|https://mlflow.org/docs/latest/|docs
+huggingface|Hugging Face documentation|https://huggingface.co/docs|docs
+transformers|Hugging Face documentation|https://huggingface.co/docs|docs
+nlp|Hugging Face Learn|https://huggingface.co/learn|course
+langchain|LangChain documentation|https://python.langchain.com/docs/|docs
+spark|Apache Spark documentation|https://spark.apache.org/docs/latest/|docs
+airflow|Airflow documentation|https://airflow.apache.org/docs/|docs
+dbt|dbt documentation|https://docs.getdbt.com/|docs
+tableau|Tableau help|https://help.tableau.com/|docs
+powerbi|Power BI documentation|https://learn.microsoft.com/power-bi/|docs
+kafka|Kafka documentation|https://kafka.apache.org/documentation/|docs
+graphql|GraphQL learn|https://graphql.org/learn/|docs
+spring|Spring Boot|https://spring.io/projects/spring-boot|docs
+java|Java documentation|https://docs.oracle.com/en/java/|docs
+go|Go documentation|https://go.dev/doc/|docs
+linux|Linux man pages|https://man7.org/linux/man-pages/|docs
+jupyter|Jupyter documentation|https://docs.jupyter.org/|docs

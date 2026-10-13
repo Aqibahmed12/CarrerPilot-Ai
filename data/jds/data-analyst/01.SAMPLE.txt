@@ -1,0 +1,3 @@
+sample://data-analyst/01
+SAMPLE JD 01 - Sample Co
+Placeholder text for development only. Sample Co 01 is hiring. Requirements: sql, microsoft excel, python, statistics, data visualization, pandas, tableau, a/b testing, seaborn, numpy.

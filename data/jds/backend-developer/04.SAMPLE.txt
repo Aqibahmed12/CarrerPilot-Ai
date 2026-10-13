@@ -1,0 +1,3 @@
+sample://backend-developer/04
+SAMPLE JD 04 - Sample Co
+Placeholder text for development only. Sample Co 04 is hiring. Requirements: sql, rest api, docker, git, python, postgresql, testing, java, node.js, ci/cd, authentication, caching, express.js, golang, communication, oop, fastapi, apache kafka.

@@ -1,0 +1,3 @@
+sample://frontend-developer/08
+SAMPLE JD 08 - Sample Co
+Placeholder text for development only. Sample Co 08 is hiring. Requirements: javascript, html, css, react, git, typescript, responsive design, next.js, jest, redux, teamwork, vite, angular.

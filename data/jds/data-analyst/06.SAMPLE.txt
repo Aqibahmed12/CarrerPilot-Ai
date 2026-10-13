@@ -1,0 +1,3 @@
+sample://data-analyst/06
+SAMPLE JD 06 - Sample Co
+Placeholder text for development only. Sample Co 06 is hiring. Requirements: sql, python, statistics, tableau, r programming, a/b testing, seaborn.

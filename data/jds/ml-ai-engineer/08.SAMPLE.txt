@@ -1,0 +1,3 @@
+sample://ml-ai-engineer/08
+SAMPLE JD 08 - Sample Co
+Placeholder text for development only. Sample Co 08 is hiring. Requirements: python, machine learning, deep learning, pytorch, scikit-learn, pandas, sql, docker, git, mlops, tensorflow, aws, nlp, computer vision, linux, hugging face, algorithms, mlflow, c++.

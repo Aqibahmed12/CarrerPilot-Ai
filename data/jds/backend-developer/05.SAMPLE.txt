@@ -1,0 +1,3 @@
+sample://backend-developer/05
+SAMPLE JD 05 - Sample Co
+Placeholder text for development only. Sample Co 05 is hiring. Requirements: sql, rest api, docker, aws, redis, linux, authentication, kubernetes, system design, spring boot, teamwork, data structures, flask, typescript.

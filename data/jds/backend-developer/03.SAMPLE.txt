@@ -1,0 +1,3 @@
+sample://backend-developer/03
+SAMPLE JD 03 - Sample Co
+Placeholder text for development only. Sample Co 03 is hiring. Requirements: sql, rest api, docker, git, python, postgresql, aws, node.js, redis, linux, microservices, mysql, mongodb, django, spring boot, data structures, algorithms, graphql, github actions.

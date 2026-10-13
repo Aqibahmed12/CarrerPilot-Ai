@@ -1,0 +1,19 @@
+{
+  "name": "Zara",
+  "profile": {
+    "skills": ["python", "git", "pandas", "jupyter", "nlp"],
+    "courses": [
+      { "name": "Machine Learning", "skillIds": ["machine-learning", "sklearn", "statistics"] },
+      { "name": "Data Structures & Algorithms", "skillIds": ["data-structures", "algorithms", "cpp"] },
+      { "name": "Probability & Statistics", "skillIds": ["statistics"] }
+    ],
+    "projects": [
+      {
+        "name": "Chest X-ray classifier",
+        "desc": "Chest X-ray classifier - Image classification of chest X-rays with a CNN in PyTorch and Python, using NumPy and Matplotlib.",
+        "skillIds": ["computer-vision", "deep-learning", "pytorch", "python", "numpy", "matplotlib"]
+      }
+    ],
+    "interests": ["medical imaging", "computer vision"]
+  }
+}

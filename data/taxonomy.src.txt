@@ -1,0 +1,125 @@
+# id|Name|cat|aliases (~ = list-only, never scanned in free text)|prereq
+python|Python|lang|python,~py|
+javascript|JavaScript|lang|javascript,~js,ecmascript|
+typescript|TypeScript|lang|typescript,~ts|javascript
+java|Java|lang|java|
+cpp|C++|lang|c++,cpp|
+csharp|C#|lang|c#,c sharp|
+sql|SQL|lang|sql,structured query language|
+r|R|lang|r programming,r language,rstudio,~r|
+go|Go|lang|golang,~go|
+rust|Rust|lang|rust,rust-lang|
+bash|Bash|lang|bash,shell scripting,~shell|
+html|HTML|lang|html,html5|
+css|CSS|lang|css,css3|html
+php|PHP|lang|php|
+kotlin|Kotlin|lang|kotlin|java
+matlab|MATLAB|lang|matlab|
+scala|Scala|lang|scala|java
+pytorch|PyTorch|framework|pytorch,torch|python,deep-learning
+tensorflow|TensorFlow|framework|tensorflow,~tf|python,deep-learning
+keras|Keras|framework|keras|python,deep-learning
+sklearn|scikit-learn|framework|scikit-learn,sklearn,scikit learn,sk-learn|python,machine-learning
+huggingface|Hugging Face|framework|hugging face,huggingface|transformers,python
+react|React|framework|react,reactjs,react.js|javascript,html,css
+nextjs|Next.js|framework|next.js,nextjs|react
+vue|Vue|framework|vue,vuejs,vue.js|javascript
+angular|Angular|framework|angular,angularjs|typescript
+svelte|Svelte|framework|svelte|javascript
+nodejs|Node.js|framework|node.js,nodejs,~node|javascript
+express|Express|framework|express.js,expressjs,~express|nodejs
+django|Django|framework|django|python
+flask|Flask|framework|flask|python
+fastapi|FastAPI|framework|fastapi|python
+spring|Spring Boot|framework|spring boot,spring framework,~spring|java
+tailwind|Tailwind CSS|framework|tailwind css,tailwindcss,tailwind|css
+redux|Redux|framework|redux|react
+jest|Jest|framework|jest|javascript
+langchain|LangChain|framework|langchain|python,llm
+dotnet|.NET|framework|.net,asp.net,dotnet|csharp
+pandas|pandas|data|pandas|python
+numpy|NumPy|data|numpy|python
+matplotlib|Matplotlib|data|matplotlib|python
+seaborn|Seaborn|data|seaborn|matplotlib
+plotly|Plotly|data|plotly|python
+tableau|Tableau|data|tableau|
+powerbi|Power BI|data|power bi,powerbi|
+excel|Excel|data|microsoft excel,ms excel,excel spreadsheets,~excel,~spreadsheets|
+looker|Looker|data|looker,looker studio|
+spark|Apache Spark|data|apache spark,pyspark,~spark|sql
+airflow|Airflow|data|apache airflow,airflow|python
+dbt|dbt|data|dbt|sql
+postgresql|PostgreSQL|data|postgresql,postgres|sql
+mysql|MySQL|data|mysql|sql
+mongodb|MongoDB|data|mongodb,~mongo|
+redis|Redis|data|redis|
+snowflake|Snowflake|data|snowflake|sql
+bigquery|BigQuery|data|bigquery|sql
+kafka|Kafka|data|apache kafka,kafka|
+sqlite|SQLite|data|sqlite|sql
+elasticsearch|Elasticsearch|data|elasticsearch,elastic search|
+etl|ETL|data|etl,elt,data pipelines,data pipeline|sql
+data-cleaning|Data Cleaning|data|data cleaning,data wrangling,data preparation,data cleansing|
+data-visualization|Data Visualization|data|data visualization,data visualisation,dashboards,dashboarding,data viz|
+feature-engineering|Feature Engineering|data|feature engineering|machine-learning,pandas
+git|Git|tool|git,version control,~github|
+docker|Docker|tool|docker,containerization,containerisation,~containers|linux
+kubernetes|Kubernetes|tool|kubernetes,k8s|docker
+aws|AWS|tool|aws,amazon web services|
+gcp|Google Cloud|tool|gcp,google cloud,google cloud platform|
+azure|Azure|tool|azure,microsoft azure|
+linux|Linux|tool|linux,unix|
+ci-cd|CI/CD|tool|ci/cd,cicd,continuous integration,continuous delivery|git
+github-actions|GitHub Actions|tool|github actions|ci-cd
+jenkins|Jenkins|tool|jenkins|ci-cd
+terraform|Terraform|tool|terraform,infrastructure as code|
+nginx|Nginx|tool|nginx|linux
+postman|Postman|tool|postman|
+jira|Jira|tool|jira|
+figma|Figma|tool|figma|
+webpack|Webpack|tool|webpack|javascript
+vite|Vite|tool|vite|javascript
+jupyter|Jupyter|tool|jupyter,jupyter notebook,google colab,colab,~notebooks|python
+mlflow|MLflow|tool|mlflow|python
+wandb|Weights & Biases|tool|weights & biases,wandb,weights and biases|python
+grafana|Grafana|tool|grafana|
+prometheus|Prometheus|tool|prometheus|
+rabbitmq|RabbitMQ|tool|rabbitmq|
+npm|npm|tool|npm,yarn,pnpm|nodejs
+machine-learning|Machine Learning|concept|machine learning,ml|python,statistics
+deep-learning|Deep Learning|concept|deep learning,neural networks,neural network,~ann,dnn,cnn,convolutional neural networks|machine-learning
+nlp|NLP|concept|nlp,natural language processing|machine-learning
+computer-vision|Computer Vision|concept|computer vision,image classification,object detection,image processing|deep-learning
+llm|LLMs|concept|llm,llms,large language models,large language model,generative ai,genai|transformers
+transformers|Transformers|concept|transformers,transformer models,attention mechanism|deep-learning
+reinforcement-learning|Reinforcement Learning|concept|reinforcement learning,~rl|machine-learning
+time-series|Time Series|concept|time series,time-series,forecasting|statistics
+recommender-systems|Recommender Systems|concept|recommender systems,recommendation systems,recommendation engines|machine-learning
+statistics|Statistics|concept|statistics,statistical analysis,hypothesis testing,probability|
+data-structures|Data Structures|concept|data structures|
+algorithms|Algorithms|concept|algorithms,algorithm design|data-structures
+oop|OOP|concept|oop,object-oriented programming,object oriented programming,object-oriented design|
+rest-api|REST APIs|concept|rest api,rest apis,restful,restful apis,restful services,~rest|
+graphql|GraphQL|concept|graphql|rest-api
+microservices|Microservices|concept|microservices,microservice architecture|rest-api,docker
+system-design|System Design|concept|system design,distributed systems,scalable systems|databases
+databases|Databases|concept|databases,database design,relational databases,dbms|sql
+testing|Testing|concept|testing,unit testing,integration testing,test automation,tdd|
+mlops|MLOps|concept|mlops,ml ops,machine learning operations|docker,machine-learning
+model-deployment|Model Deployment|concept|model deployment,model serving,deploying models,productionizing models|docker,machine-learning
+a-b-testing|A/B Testing|concept|a/b testing,a/b tests,ab testing,experimentation|statistics
+responsive-design|Responsive Design|concept|responsive design,responsive web design,mobile-first|css
+accessibility|Accessibility|concept|accessibility,a11y,wcag|html
+web-performance|Web Performance|concept|web performance,core web vitals,performance optimization|javascript
+authentication|Authentication|concept|authentication,oauth,jwt,authorization,~auth|rest-api
+caching|Caching|concept|caching,cache invalidation|
+concurrency|Concurrency|concept|concurrency,multithreading,asynchronous programming,~async|
+design-patterns|Design Patterns|concept|design patterns|oop
+agile|Agile|concept|agile,scrum,kanban|
+prompt-engineering|Prompt Engineering|concept|prompt engineering|llm
+rag|RAG|concept|rag,retrieval-augmented generation,retrieval augmented generation|llm
+vector-db|Vector Databases|concept|vector databases,vector database,vector db,pinecone,faiss|
+communication|Communication|soft|communication,communication skills,written communication,verbal communication|
+teamwork|Teamwork|soft|teamwork,collaboration,collaborative,team player|
+problem-solving|Problem Solving|soft|problem solving,problem-solving,analytical thinking,analytical skills|
+leadership|Leadership|soft|leadership,mentoring|

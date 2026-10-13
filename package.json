@@ -4,12 +4,17 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "tsx scripts/dev.ts",
     "build": "tsc -b && vite build",
     "lint": "oxlint",
     "preview": "vite preview",
     "test": "vitest run",
-    "typecheck": "tsc --noEmit -p tsconfig.app.json"
+    "typecheck": "tsc --noEmit -p tsconfig.app.json",
+    "data": "tsx scripts/gen-static.ts && tsx scripts/build-requirements.ts && tsx scripts/build-layouts.ts",
+    "samples": "tsx scripts/gen-sample-jds.ts",
+    "recs": "tsx scripts/gen-recs.ts",
+    "server": "tsx server/llm.ts",
+    "vite": "vite"
   },
   "dependencies": {
     "d3-scale": "^4.0.2",

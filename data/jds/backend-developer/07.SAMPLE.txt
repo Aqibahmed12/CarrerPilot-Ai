@@ -1,0 +1,3 @@
+sample://backend-developer/07
+SAMPLE JD 07 - Sample Co
+Placeholder text for development only. Sample Co 07 is hiring. Requirements: sql, rest api, docker, git, aws, testing, java, ci/cd, authentication, caching, golang, communication, fastapi, apache kafka.

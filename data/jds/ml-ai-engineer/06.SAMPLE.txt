@@ -1,0 +1,3 @@
+sample://ml-ai-engineer/06
+SAMPLE JD 06 - Sample Co
+Placeholder text for development only. Sample Co 06 is hiring. Requirements: python, machine learning, pytorch, scikit-learn, git, mlops, statistics, nlp, computer vision, hugging face, transformers, algorithms.

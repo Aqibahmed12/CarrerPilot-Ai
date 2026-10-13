@@ -1,0 +1,3 @@
+sample://frontend-developer/06
+SAMPLE JD 06 - Sample Co
+Placeholder text for development only. Sample Co 06 is hiring. Requirements: javascript, html, css, react, git, typescript, next.js, testing, node.js, jest, figma, graphql.
