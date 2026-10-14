@@ -1,8 +1,18 @@
 import { motion, useReducedMotion } from 'motion/react'
-import type { ReactNode } from 'react'
+import type { ReactNode, WheelEventHandler } from 'react'
 import { EASE } from '../lib/motion'
+import { Headline } from './Headline'
 
-export function Stage({ num, children }: { num: string; children: ReactNode }) {
+type Props = {
+  num: string
+  kicker?: string
+  title?: string
+  className?: string
+  onWheel?: WheelEventHandler
+  children?: ReactNode
+}
+
+export function Stage({ num, kicker, title, className = 'flex flex-col justify-center px-[6vw]', onWheel, children }: Props) {
   const reduce = useReducedMotion()
   const v = reduce
     ? {
@@ -16,8 +26,14 @@ export function Stage({ num, children }: { num: string; children: ReactNode }) {
         exit: { opacity: 0, filter: 'blur(2px)', transition: { duration: 0.35, ease: EASE } },
       }
   return (
-    <motion.main {...v} className="absolute inset-0 z-20 flex flex-col justify-center px-[6vw]">
+    <motion.main {...v} onWheel={onWheel} className={`absolute inset-0 z-20 ${className}`}>
       <span aria-hidden className="numeral">{num}</span>
+      {title && (
+        <div className="absolute left-[6vw] top-[84px] z-20">
+          {kicker && <p className="mono-label mb-2">{kicker}</p>}
+          <Headline lines={[title]} size="h1" delay={0.1} />
+        </div>
+      )}
       {children}
     </motion.main>
   )

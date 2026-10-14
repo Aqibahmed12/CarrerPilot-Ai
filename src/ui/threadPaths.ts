@@ -1,17 +1,44 @@
+export type Pt = [number, number]
 export type ThreadPreset = { d: string; x: number; y: number }
+const f = (n: number) => Math.round(n * 10) / 10
 
-// Every preset: M + C + C (same command structure) so `d` interpolates. viewBox 1440x900.
-export const PATHS: ThreadPreset[] = [
-  // 00 Prologue: rises from bottom centre, bends right
-  { d: 'M 720 900 C 720 700 680 560 760 440 C 840 320 1000 300 1100 180', x: 1100, y: 180 },
-  // 01 Origin: vertical on the left gutter
-  { d: 'M 86 40 C 86 160 86 260 86 340 C 86 420 86 520 86 640', x: 86, y: 640 },
-  // 02 Horizon: horizontal underline beneath the role list
-  { d: 'M 86 700 C 300 700 500 700 720 700 C 940 700 1100 700 1300 700', x: 1300, y: 700 },
-  // 03 Map: 270deg ring arc
-  { d: 'M 824.4 605.6 C 685.8 467 784 230 980 230 C 1176 230 1274.2 467 1135.6 605.6', x: 1135.6, y: 605.6 },
-  // 04 Ascent: elevation line
-  { d: 'M 86 780 C 360 780 460 640 720 600 C 980 560 1100 300 1360 220', x: 1360, y: 220 },
-  // 05 Summit: closes into the contour
-  { d: 'M 980 250 C 1200 250 1260 560 1000 640 C 800 700 700 450 980 250', x: 980, y: 250 },
-]
+// Every preset is `M` + four `C` so motion can interpolate `d` between any two stages.
+export function smooth(pts: Pt[]): ThreadPreset {
+  const P = [...pts]
+  while (P.length < 5) P.push(P[P.length - 1])
+  let d = `M ${f(P[0][0])} ${f(P[0][1])}`
+  for (let i = 0; i < 4; i++) {
+    const p0 = P[Math.max(0, i - 1)]
+    const p1 = P[i]
+    const p2 = P[i + 1]
+    const p3 = P[Math.min(4, i + 2)]
+    d += ` C ${f(p1[0] + (p2[0] - p0[0]) / 6)} ${f(p1[1] + (p2[1] - p0[1]) / 6)} ${f(p2[0] - (p3[0] - p1[0]) / 6)} ${f(p2[1] - (p3[1] - p1[1]) / 6)} ${f(p2[0])} ${f(p2[1])}`
+  }
+  return { d, x: P[4][0], y: P[4][1] }
+}
+
+export function arc(cx: number, cy: number, r: number, a0: number, sweep: number): ThreadPreset {
+  const seg = (sweep / 4) * (Math.PI / 180)
+  const k = (4 / 3) * Math.tan(seg / 4) * r
+  const at = (a: number): Pt => [cx + r * Math.cos(a), cy + r * Math.sin(a)]
+  const start = (a0 * Math.PI) / 180
+  const s = at(start)
+  let d = `M ${f(s[0])} ${f(s[1])}`
+  let end = s
+  for (let i = 0; i < 4; i++) {
+    const a = start + i * seg
+    const b = a + seg
+    const p = at(a)
+    end = at(b)
+    d += ` C ${f(p[0] - k * Math.sin(a))} ${f(p[1] + k * Math.cos(a))} ${f(end[0] + k * Math.sin(b))} ${f(end[1] - k * Math.cos(b))} ${f(end[0])} ${f(end[1])}`
+  }
+  return { d, x: f(end[0]), y: f(end[1]) }
+}
+
+export function hline(x0: number, x1: number, y: number): ThreadPreset {
+  const n = 4
+  return smooth(Array.from({ length: n + 1 }, (_, i) => [x0 + ((x1 - x0) * i) / n, y] as Pt))
+}
+
+export const PROLOGUE = smooth([[720, 900], [705, 720], [740, 540], [860, 370], [1100, 190]])
+export const ORIGIN = smooth([[86, 60], [86, 230], [86, 400], [86, 570], [86, 700]])

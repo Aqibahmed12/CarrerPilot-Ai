@@ -9,7 +9,7 @@
     "lint": "oxlint",
     "preview": "vite preview",
     "test": "vitest run",
-    "typecheck": "tsc --noEmit -p tsconfig.app.json",
+    "typecheck": "tsc --noEmit -p tsconfig.app.json && tsc --noEmit -p tsconfig.node.json",
     "data": "tsx scripts/gen-static.ts && tsx scripts/build-requirements.ts && tsx scripts/build-layouts.ts",
     "samples": "tsx scripts/gen-sample-jds.ts",
     "recs": "tsx scripts/gen-recs.ts",

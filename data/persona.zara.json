@@ -1,7 +1,7 @@
 {
   "name": "Zara",
   "profile": {
-    "skills": ["python", "git", "pandas", "jupyter", "nlp"],
+    "skills": ["python", "git", "pandas", "jupyter", "nlp", "fastapi"],
     "courses": [
       { "name": "Machine Learning", "skillIds": ["machine-learning", "sklearn", "statistics"] },
       { "name": "Data Structures & Algorithms", "skillIds": ["data-structures", "algorithms", "cpp"] },

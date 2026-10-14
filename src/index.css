@@ -73,3 +73,8 @@ body::after {
   transition: background-size .5s var(--ease); color: var(--text-2); padding-bottom: 2px;
 }
 .link-draw:hover { background-size: 100% 1px; color: var(--text); }
+
+.field-line { position: absolute; left: 0; right: 0; bottom: 0; height: 1px; background: var(--violet); transform: scaleX(0); transform-origin: left; transition: transform .6s var(--ease); }
+.field:focus-within .field-line { transform: scaleX(1); }
+.svg-mono { font-family: var(--font-mono); font-size: 10px; letter-spacing: .1em; fill: var(--text-2); }
+.panel { background: var(--bg-1); border: 1px solid var(--line); border-radius: var(--r-panel); box-shadow: inset 0 1px 0 rgba(255,255,255,.04); }
