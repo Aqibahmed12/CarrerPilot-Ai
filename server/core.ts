@@ -57,7 +57,11 @@ export async function callLLM(task: Task, input: string): Promise<unknown | null
     try {
       const data = parse(await chat(p, SYS[task], p.name === 'groq' ? `${input}\n/no_think` : input))
       cache[key] = data
-      fs.writeFileSync(CACHE, JSON.stringify(cache))
+      try {
+        fs.writeFileSync(CACHE, JSON.stringify(cache))
+      } catch {
+        /* read-only filesystem on serverless: in-memory cache only */
+      }
       return data
     } catch {
       /* try next provider */

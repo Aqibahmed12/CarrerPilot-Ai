@@ -1,0 +1,3 @@
+{
+  "functions": { "api/llm.ts": { "maxDuration": 30 } }
+}
