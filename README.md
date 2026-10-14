@@ -2,6 +2,14 @@
 
 CareerPilot AI is an AI-powered career planning and job-fit dashboard built with React, TypeScript, and Vite. It helps users explore career trajectories, understand skill gaps, review role-fit scoring, and track structured roadmap milestones in a visually rich interactive experience.
 
+## Hackathon Attribution
+
+This project was developed for the 24-hour OpenHack'26 Hackathon.
+
+- Team Name: Sentinel Innovetors
+- Lead: Aqib Ahmed
+- Team Members: Muzzamil Ahmed, Shoaib Ahmed
+
 ## Overview
 
 This project presents a polished career guidance interface that combines:
@@ -142,4 +150,3 @@ Contributions are welcome. If you want to improve the UI, job-scoring logic, dat
 ## License
 
 This project does not currently declare a license in the repository metadata. Please check the repository settings or ask the maintainer for licensing details before reuse or distribution.
-
